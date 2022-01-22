@@ -1,6 +1,6 @@
 package com.jjdev.hero.entity;
 
-import com.sun.istack.NotNull;
+import ch.qos.logback.core.joran.action.Action;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,32 +14,26 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "heroes_villains")
-public class Heroes_Villains {
+public class HeroesVillainsEntity {
 
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotNull
     private String name;
 
     private String creationDate;
 
     private String powers;
 
-    @NotNull
     private String img;
 
-    @NotNull
     private String tipo;
 
     private String fraquesa;
 
-    @NotNull
     private String enemy;
 
-    @NotNull
     private String colors;
-
 
 }

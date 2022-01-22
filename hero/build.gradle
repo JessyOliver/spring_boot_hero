@@ -25,6 +25,17 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//Swagger
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+	implementation 'io.springfox:springfox-bean-validators:2.9.2'
+
+	//webClient
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+	//JPA Metamodels.
+	annotationProcessor 'org.hibernate:hibernate-jpamodelgen'
 }
 
 test {
