@@ -1,6 +1,5 @@
 package com.jjdev.hero.entity;
 
-import ch.qos.logback.core.joran.action.Action;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,7 +17,7 @@ public class HeroesVillainsEntity {
 
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     private String name;
 
